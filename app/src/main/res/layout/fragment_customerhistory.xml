@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.companyproject.fujitsu.discountdeals.Customerhistory">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deal Title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:id="@+id/dealtitletxt"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/dealedit"
+        android:text="   New Kids Road"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@+id/dealtitletxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/dealtitletxt"
+        android:id="@+id/Cateitletxt"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/catedit"
+        android:text="MYR500 "
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="130dp"
+        android:layout_below="@+id/dealedit"
+        android:layout_toRightOf="@+id/Cateitletxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Name"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Cateitletxt"
+        android:id="@+id/originaltxt"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/origedttxt"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="85dp"
+        android:text="Kalaas Road"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/catedit"
+        android:layout_toRightOf="@+id/originaltxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/originaltxt"
+        android:id="@+id/discountetxt"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/discountededit"
+        android:text="Mahatma Gandhi Nagar Kanti Factory Road kbagh Patna 800026"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/origedttxt"
+        android:layout_toRightOf="@+id/discountetxt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="15dp"
+     android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/discountetxt"
+        android:id="@+id/getdiscountetxt"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/05/2017"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/discountededit"
+        android:id="@+id/getdiscountetxtdig"
+        android:layout_marginLeft="120dp"
+        android:layout_toRightOf="@+id/getdiscountetxt"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/getdiscountetxt"
+        android:id="@+id/startdate"
+      />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1:20pm"
+        android:layout_marginTop="20dp"
+        android:id="@+id/startdateedit"
+        android:layout_below="@+id/getdiscountetxtdig"
+        android:layout_toRightOf="@+id/startdate"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="@android:color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/startdateedit"
+        android:background="@android:color/darker_gray"
+        />
+
+
+</RelativeLayout>

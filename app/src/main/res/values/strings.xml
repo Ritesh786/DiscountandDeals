@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Discount&amp;Deals</string>
+
+    <string-array name="newstype_arrays">
+        <item>Choose Login Type</item>
+        <item>Merchant</item>
+    </string-array>
+    <string name="title_activity_storelist">STORELIST</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rate">Store List</string>
+</resources>

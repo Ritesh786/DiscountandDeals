@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9e9e9"
+    tools:context="com.companyproject.fujitsu.discountdeals.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:src="@drawable/imagelogo"
+        android:layout_marginTop="40dp"/>
+
+
+
+        <EditText
+            android:id="@+id/useredtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="   UserName or Email"
+            android:drawableLeft="@drawable/userone"
+            android:layout_below="@id/logo"
+            android:background="@drawable/roundedit"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="8dp"
+            />
+        <EditText
+            android:id="@+id/passwordedtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="  Password"
+            android:drawableLeft="@drawable/unlocked"
+            android:maxLength="10"
+            android:layout_below="@+id/useredtxt"
+            android:background="@drawable/roundedit"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="8dp"
+            />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/spinnerlayout"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/roundedit"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_below="@id/passwordedtxt">
+    
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:src="@drawable/group"/>
+    
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chooselogintype"
+    android:layout_below="@+id/passwordedtxt"
+    android:entries="@array/newstype_arrays"
+    android:padding="0dp"
+    android:layout_marginLeft="10dp"
+    ></Spinner>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotxt"
+        android:layout_below="@id/spinnerlayout"
+        android:text="Forgot Password?"
+        android:textSize="15dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dp"
+     />
+
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn1"
+        android:textColor="#ffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/forgotxt"
+        android:layout_marginLeft="30dp"
+        android:text="Sign In"/>
+</RelativeLayout>
