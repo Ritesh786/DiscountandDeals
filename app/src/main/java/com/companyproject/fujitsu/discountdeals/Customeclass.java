@@ -9,12 +9,27 @@ public class Customeclass {
     private  String text1;
     private  String text2;
 
+    public String getStoreid() {
+        return storeid;
+    }
+
+    public void setStoreid(String storeid) {
+        this.storeid = storeid;
+    }
+
+//    public Customeclass(String storeid) {
+//        this.storeid = storeid;
+//    }
+
+    private String storeid;
+
     public Customeclass() {
     }
 
-    public Customeclass(String text1, String text2) {
+    public Customeclass(String text1, String text2,String storeid) {
         this.text1 = text1;
         this.text2 = text2;
+        this.storeid = storeid;
     }
 
     public String getText1() {

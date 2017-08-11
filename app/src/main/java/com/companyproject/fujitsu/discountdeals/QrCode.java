@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
 
 public class QrCode extends AppCompatActivity implements QRCodeReaderView.OnQRCodeReadListener, View.OnClickListener {

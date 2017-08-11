@@ -4,6 +4,7 @@ package com.companyproject.fujitsu.discountdeals;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -84,21 +85,11 @@ public class BlankFragment extends Fragment implements AdapterView.OnItemClickLi
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-//         if( position == 0 ) {
-//
-//    DetailFragment fragment = new DetailFragment();
-//    FragmentManager manager = getFragmentManager();
-//    manager.beginTransaction().replace(R.id.frame_trans, fragment).addToBackStack("Ritesh").commit();
-//
-//         }
-//
-//        if( position==1 ){
-//
-//            Name fragment = new Name();
-//            FragmentManager manager = getFragmentManager();
-//            manager.beginTransaction().replace(R.id.frame_trans, fragment).addToBackStack("Shailendra").commit();
-//
-//        }
+        Customeclass mo123 = (Customeclass) parent.getItemAtPosition(position);
+
+        Intent newsdetailintnt = new Intent(getContext(),StoreDetail.class);
+        newsdetailintnt.putExtra("storeid",mo123.getStoreid());;
+        startActivity(newsdetailintnt);
 
     }
 
@@ -140,6 +131,7 @@ public class BlankFragment extends Fragment implements AdapterView.OnItemClickLi
                                         Customeclass customeclass = new Customeclass();
                                         customeclass.setText1(obj.getString("store_name"));
                                         customeclass.setText2(obj.getString("city_name"));
+                                        customeclass.setStoreid(obj.getString("store_id"));
                                         dummydata.add(customeclass);
                                         Log.d("dummydata00","dummy11 "+dummydata);
                                     }
@@ -191,6 +183,9 @@ public class BlankFragment extends Fragment implements AdapterView.OnItemClickLi
         if(dummydata!=null) dummydata.clear();
 
         }
+
+
+
     }
 
 

@@ -20,50 +20,48 @@
         android:layout_height="1dip"
         android:background="@android:color/darker_gray"
         />
-    <EditText
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/storename"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="   Select Store"
-        android:background="@android:color/transparent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:id="@+id/selectstore"
-        />
-    <View
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Select Store"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000" />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@android:color/darker_gray"-->
+        <!--/>-->
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/state_spinner"
         android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="@android:color/darker_gray"
-        />
-    <EditText
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Select State"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000" />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@android:color/darker_gray"-->
+        <!--/>-->
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/city_spinner"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="  Select Start Date"
-        android:background="@android:color/transparent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:id="@+id/selectstartdate"
-        android:focusable="false"
-        />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="@android:color/darker_gray"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="  Select End Date"
-        android:background="@android:color/transparent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:id="@+id/selsctenddate"
-        android:focusable="false"
-       />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="@android:color/darker_gray"
-        />
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Select City"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="#000000" />
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dip"-->
+        <!--android:background="@android:color/darker_gray"-->
+        <!--/>-->
 
     <Button
         android:id="@+id/Search_btn"
