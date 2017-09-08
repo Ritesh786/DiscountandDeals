@@ -145,10 +145,10 @@ public class ReedemCoupon extends Fragment implements View.OnClickListener {
                     @Override
                     public void onResponse(String response) {
                         //   Log.d("jaba", usernsme);
-//                        try {
-//                            JSONObject jsonresponse = new JSONObject(response).getJSONObject("response");
-//                            String success = jsonresponse.getString("httpCode");
-//                            if (success.equals("202")) {
+                        try {
+                            JSONObject jsonresponse = new JSONObject(response).getJSONObject("response");
+                            String success = jsonresponse.getString("httpCode");
+                            if (success.equals("202")) {
 //                                JSONArray jsonArray = jsonresponse.getJSONArray("store_list");
 //                                Log.d("array00","jarray "+jsonArray.toString());
 //                                for (int i = 0; i < jsonArray.length(); i++) {
@@ -162,21 +162,21 @@ public class ReedemCoupon extends Fragment implements View.OnClickListener {
 //                                    Log.d("dummydata00","dummy11 "+dummydata);
 //                                }
 //                                mNameAdapter.notifyDataSetChanged();
-//
-//                            } else {
-//                                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//                                builder.setMessage("You Have Entered Wrong Password..")
-//                                        .setNegativeButton("ok", null)
-//                                        .create()
-//                                        .show();
-//
-//                            }
-//
-//                        } catch (JSONException e) {
-//                            e.printStackTrace();
-//                        }
-//
-//                        //  Toast.makeText(getContext(), response.toString(), Toast.LENGTH_LONG).show();
+
+                            } else {
+                                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                                builder.setMessage("Invalid Coupon Code...")
+                                        .setNegativeButton("ok", null)
+                                        .create()
+                                        .show();
+
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                        //  Toast.makeText(getContext(), response.toString(), Toast.LENGTH_LONG).show();
                         pDialog.dismiss();
                     }
                 },
