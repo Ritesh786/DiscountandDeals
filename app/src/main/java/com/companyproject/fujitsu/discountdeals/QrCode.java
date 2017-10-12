@@ -34,7 +34,6 @@ public class QrCode extends AppCompatActivity implements QRCodeReaderView.OnQRCo
         qrCodeReaderView.setQRDecodingEnabled(true);
 
         qrCodeReaderView.setTorchEnabled(true);
-
         qrCodeReaderView.setBackCamera();
     }
 
